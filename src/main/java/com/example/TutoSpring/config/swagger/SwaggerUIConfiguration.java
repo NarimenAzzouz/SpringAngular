@@ -69,6 +69,8 @@ class SwaggerUIConfiguration {
                 .build();
     }
 
+
+
     @Bean
     public GroupedOpenApi userGroupOpenApi() {
         return GroupedOpenApi.builder()
@@ -77,7 +79,4 @@ class SwaggerUIConfiguration {
                 .addOperationCustomizer(customGlobalHeaders())
                 .build();
     }
-
-
-
 }
