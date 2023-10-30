@@ -63,8 +63,8 @@ class SwaggerUIConfiguration {
     @Bean
     public GroupedOpenApi healthGroupOpenApi() {
         return GroupedOpenApi.builder()
-                .group("health")
-                .pathsToMatch("/health/**")
+                .group("Rest Api V1")
+                .pathsToMatch("/skills/**")
                 .addOperationCustomizer(customGlobalHeaders())
                 .build();
     }
@@ -73,7 +73,7 @@ class SwaggerUIConfiguration {
     public GroupedOpenApi userGroupOpenApi() {
         return GroupedOpenApi.builder()
                 .group("Employee")
-                .pathsToMatch("/api/v1/users/**")
+                .pathsToMatch("/category/**")
                 .addOperationCustomizer(customGlobalHeaders())
                 .build();
     }
