@@ -24,14 +24,14 @@ public class EvaluationDto {
    private Set<PersSkills> persSkills;
 
 
-    private Integer Rate;
+    private Integer rate;
 
 
-    private String Remarque;
+    private String remarque;
 
 
-    private boolean Certified;
+    private boolean certified;
 
 
-    private Integer Preferance;
+    private Integer preferance;
 }

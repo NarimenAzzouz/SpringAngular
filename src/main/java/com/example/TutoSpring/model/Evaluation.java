@@ -27,16 +27,16 @@ public class Evaluation extends TracedEntity{
 
 
     @Column(name = "rate")
-    private Integer Rate;
+    private Integer rate;
 
     @Column(name = "remarque")
-    private String Remarque;
+    private String remarque;
 
     @Column(name = "certified")
-    private boolean Certified;
+    private boolean certified;
 
     @Column(name = "preferance")
-    private Integer Preferance;
+    private Integer preferance;
 
 
     @OneToMany(cascade=CascadeType.ALL,mappedBy ="evaluation")

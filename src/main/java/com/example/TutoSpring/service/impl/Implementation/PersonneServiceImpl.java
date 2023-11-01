@@ -63,6 +63,8 @@ public class PersonneServiceImpl implements PersonneService {
             personne.setNom(personneDto.getNom()); // Remplacez "champ1" par le nom de vos champs
             personne.setPrenom(personneDto.getPrenom()); // Remplacez "champ2" par le nom de vos champs
             personne.setTypeEmploy(personneDto.getTypeEmploy()); // Remplacez "champ2" par le nom de vos champs
+            personne.setPersSkills(personneDto.getPersSkills()); // Remplacez "champ2" par le nom de vos champs
+
 
 
 
