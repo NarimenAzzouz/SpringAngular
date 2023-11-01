@@ -1,15 +1,14 @@
 package com.example.TutoSpring.dto.kpis;
 
-import com.example.TutoSpring.model.Category;
 import com.example.TutoSpring.model.PersSkills;
-import com.example.TutoSpring.model.Skills;
+import com.example.TutoSpring.model.TypeEmploy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.ManyToOne;
 import lombok.*;
 
-import java.util.List;
-import java.util.Set;
 import java.util.UUID;
 
 @NoArgsConstructor
@@ -17,18 +16,17 @@ import java.util.UUID;
 @Getter
 @Setter
 @Builder
-public class SkillsDto {
+public class PersonneDto {
+
+    private UUID idPers;
 
 
-    private UUID idSki;
+    private String nom;
 
 
-    private String nomSkills;
+    private String prenom;
 
-
-
-    @JsonIgnore
-    private Set<Category> category;
+    private TypeEmploy typeEmploy;
 
     @JsonIgnore
     private PersSkills persSkills;

@@ -64,7 +64,7 @@ class SwaggerUIConfiguration {
     public GroupedOpenApi healthGroupOpenApi() {
         return GroupedOpenApi.builder()
                 .group("Rest Api V1")
-                .pathsToMatch("/skills/**")
+                .pathsToMatch("/personne/**")
                 .addOperationCustomizer(customGlobalHeaders())
                 .build();
     }
@@ -75,7 +75,7 @@ class SwaggerUIConfiguration {
     public GroupedOpenApi userGroupOpenApi() {
         return GroupedOpenApi.builder()
                 .group("Employee")
-                .pathsToMatch("/category/**")
+                .pathsToMatch("/personne/**")
                 .addOperationCustomizer(customGlobalHeaders())
                 .build();
     }
