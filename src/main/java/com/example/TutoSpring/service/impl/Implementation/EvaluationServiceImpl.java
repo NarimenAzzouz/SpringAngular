@@ -62,7 +62,7 @@ public class EvaluationServiceImpl implements EvaluationService {
             // Mettre à jour les champs de l'objet Certification avec les valeurs de certificationDto
             evaluation.setRate(evaluationDto.getRate()); // Remplacez "champ1" par le nom de vos champs
             evaluation.setRemarque(evaluationDto.getRemarque()); // Remplacez "champ2" par le nom de vos champs
-            //evaluation.setCertified(evaluationDto()); // Remplacez "champ2" par le nom de vos champs
+            evaluation.setCertified(evaluationDto.isCertified()); // Remplacez "champ2" par le nom de vos champs
             evaluation.setPreferance(evaluationDto.getPreferance()); // Remplacez "champ2" par le nom de vos champs
             evaluation.setPersSkills(evaluationDto.getPersSkills()); // Remplacez "champ2" par le nom de vos champs
 

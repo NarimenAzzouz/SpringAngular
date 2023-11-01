@@ -1039,3 +1039,31 @@ Caused by: java.lang.IllegalArgumentException: Unable to locate Attribute with t
 2023-11-01T16:33:21.315+01:00  INFO 15168 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2023-11-01T16:33:21.322+01:00  INFO 15168 --- [main] c.e.TutoSpring.TutoSpringApplication     : Started TutoSpringApplication in 3.504 seconds (process running for 4.034)
 2023-11-01T16:33:45.728+01:00  INFO 15168 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01T16:35:54.246+01:00  INFO 6344 --- [main] c.e.TutoSpring.TutoSpringApplication     : Starting TutoSpringApplication using Java 17.0.8 with PID 6344 (C:\Users\narim\IdeaProjects\springProject\ProjectSpringAngular\target\classes started by narim in C:\Users\narim\IdeaProjects\springProject\ProjectSpringAngular)
+2023-11-01T16:35:54.248+01:00 DEBUG 6344 --- [main] c.e.TutoSpring.TutoSpringApplication     : Running with Spring Boot v3.1.5, Spring v6.0.13
+2023-11-01T16:35:54.248+01:00  INFO 6344 --- [main] c.e.TutoSpring.TutoSpringApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-11-01T16:35:54.984+01:00  INFO 6344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-01T16:35:55.081+01:00  INFO 6344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 5 JPA repository interfaces.
+2023-11-01T16:35:55.590+01:00  INFO 6344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-01T16:35:55.685+01:00  INFO 6344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1393 ms
+2023-11-01T16:35:56.205+01:00  INFO 6344 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-01T16:35:56.466+01:00  WARN 6344 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-11-01T16:35:57.895+01:00  INFO 6344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01T16:35:58.444+01:00  WARN 6344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-01T16:35:59.262+01:00  INFO 6344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-01T16:35:59.273+01:00  INFO 6344 --- [main] c.e.TutoSpring.TutoSpringApplication     : Started TutoSpringApplication in 5.465 seconds (process running for 6.194)
+2023-11-01T16:45:17.246+01:00  INFO 6344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01T16:45:22.151+01:00  INFO 3492 --- [main] c.e.TutoSpring.TutoSpringApplication     : Starting TutoSpringApplication using Java 17.0.8 with PID 3492 (C:\Users\narim\IdeaProjects\springProject\ProjectSpringAngular\target\classes started by narim in C:\Users\narim\IdeaProjects\springProject\ProjectSpringAngular)
+2023-11-01T16:45:22.153+01:00 DEBUG 3492 --- [main] c.e.TutoSpring.TutoSpringApplication     : Running with Spring Boot v3.1.5, Spring v6.0.13
+2023-11-01T16:45:22.153+01:00  INFO 3492 --- [main] c.e.TutoSpring.TutoSpringApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-11-01T16:45:22.893+01:00  INFO 3492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-01T16:45:23.000+01:00  INFO 3492 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 5 JPA repository interfaces.
+2023-11-01T16:45:23.493+01:00  INFO 3492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-01T16:45:23.595+01:00  INFO 3492 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1397 ms
+2023-11-01T16:45:24.042+01:00  INFO 3492 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-01T16:45:24.342+01:00  WARN 3492 --- [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2023-11-01T16:45:25.548+01:00  INFO 3492 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-01T16:45:26.070+01:00  WARN 3492 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-01T16:45:27.036+01:00  INFO 3492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-01T16:45:27.049+01:00  INFO 3492 --- [main] c.e.TutoSpring.TutoSpringApplication     : Started TutoSpringApplication in 5.414 seconds (process running for 6.082)
+2023-11-01T16:45:37.125+01:00  INFO 3492 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
