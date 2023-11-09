@@ -50,6 +50,7 @@ public interface PersonneApi {
             @ApiResponse(code=200,message = "le Personne a ete trouve supprimer")
     })
     void Delete(@PathVariable("idPers") UUID idPers);
+    
 
     @GetMapping(value = "/personne/all",produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiOperation(value = "renvoi la liste des Personnes",notes = "cette methode permet de chercher et revoyer la liste des Personnes qui existe dans la BDD " , responseContainer = "Set<PersonneDto>")
