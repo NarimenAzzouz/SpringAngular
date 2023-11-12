@@ -1,6 +1,5 @@
 package com.example.TutoSpring.config.swagger;
 
-// import com.elyadata.sm.util.tools.Constants;
 import com.example.TutoSpring.util.tools.Constants;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
@@ -23,11 +22,11 @@ import java.util.List;
 @RequiredArgsConstructor
 @OpenAPIDefinition(
         servers = {@Server(url = "/", description = "Default Server URL")},
-        info = @Info(title = "${info.app.name}",
-                version = "${info.app.version}",
-                description = "${info.app.description}",
-                contact = @Contact(name = "${info.app.contact.name}",
-                        email = "${info.app.contact.email}")))
+        info = @Info(title = "SkillsMatrix",
+                version = "V1",
+                description = "",
+                contact = @Contact(name = "",
+                        email = "")))
 class SwaggerUIConfiguration {
 
     @Bean
@@ -63,7 +62,7 @@ class SwaggerUIConfiguration {
     @Bean
     public GroupedOpenApi healthGroupOpenApi() {
         return GroupedOpenApi.builder()
-                .group("Rest Api V1")
+                .group("Skills")
                 .pathsToMatch("/skills/**")
                 .addOperationCustomizer(customGlobalHeaders())
                 .build();
@@ -76,6 +75,14 @@ class SwaggerUIConfiguration {
         return GroupedOpenApi.builder()
                 .group("Employee")
                 .pathsToMatch("/skills/**")
+                .addOperationCustomizer(customGlobalHeaders())
+                .build();
+    }
+    @Bean
+    public GroupedOpenApi CategoryGroupOpenApi() {
+        return GroupedOpenApi.builder()
+                .group("Category")
+                .pathsToMatch("/category/**")
                 .addOperationCustomizer(customGlobalHeaders())
                 .build();
     }
