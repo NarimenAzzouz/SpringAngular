@@ -23,8 +23,8 @@ public class PersSkills extends TracedEntity {
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name = "idpersskill")
-    private UUID idPers_Skill;
+    @Column(name = "id")
+    private UUID id;
 
 
     @OneToMany(cascade=CascadeType.ALL,mappedBy ="persSkills")

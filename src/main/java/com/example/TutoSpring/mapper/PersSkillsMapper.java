@@ -8,7 +8,7 @@ import org.mapstruct.MappingConstants;
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
 public interface PersSkillsMapper {
 
-    PersSkillsDto persSkillsToPersSkillsDto(PersSkills persSkills);
-    PersSkills persSkillsDtoToPersSkills(PersSkillsDto persSkillsDto);
+    PersSkillsDto toDto(PersSkills persSkills);
+    PersSkills toEntity(PersSkillsDto persSkillsDto);
 
 }
