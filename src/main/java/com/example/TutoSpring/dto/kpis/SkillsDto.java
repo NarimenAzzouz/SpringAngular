@@ -16,17 +16,17 @@ import java.util.UUID;
 public class SkillsDto {
 
 
-    private UUID idSki;
+    private UUID id;
 
 
     private String nomSkills;
 
 
 
-    private Set<CategoryDto> category ;
+    private UUID categoryId ;
 
 
-    private PersSkillsDto persSkills;
+    //private PersSkillsDto persSkills;
 
 
 

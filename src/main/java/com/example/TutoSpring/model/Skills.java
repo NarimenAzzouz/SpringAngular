@@ -14,12 +14,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Getter
 @Setter
-@Builder
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
-
-
-
-public class Skills extends TracedEntity{
+public class Skills extends TracedEntity {
 
 
     @Id
@@ -33,17 +28,9 @@ public class Skills extends TracedEntity{
     @Column(name = "nomskills")
     private String nomSkills;
 
-
-    @OneToMany(mappedBy = "skills")
-    private Set<Category> category;
-
     @ManyToOne
-    private PersSkills persSkills;
-
-
-
-
-
-
-
+    @JoinColumn(name = "category_id")
+    private Category category;
+    @ManyToOne
+    private PersSkills persSkills ;
 }
