@@ -3,6 +3,8 @@ package com.example.TutoSpring.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.UUID;
 
 @SuppressWarnings("ALL")
@@ -19,12 +21,8 @@ public class Category extends TracedEntity{
 
 
     @Id
-    @Setter(AccessLevel.NONE)
-    @EqualsAndHashCode.Exclude
-    @ToString.Exclude
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name = "id")
-    private UUID idCategory;
+    private UUID id;
 
     @Column(name = "nomcategory")
     private String nomCategory;
@@ -32,8 +30,8 @@ public class Category extends TracedEntity{
     @Column(name = "description")
     private String description;
 
-    @ManyToOne
-    private Skills skills;
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<Skills> skills = new HashSet<>();
 
 
     public Category (String nomCategory){
