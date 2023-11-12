@@ -44,16 +44,16 @@ public class SkillsServiceImpl implements SkillsService {
     @Override
     public SkillsDto save(SkillsDto skillsDto) {
 
-        Skills skills = skillsMapper.fromSkillsDtoToSkills(skillsDto);
+        Skills skills = skillsMapper.toEntity(skillsDto);
         skills = skillsDao.save(skills);
-        return skillsMapper.fromSkillsToSkillsDto(skills);
+        return skillsMapper.toDto(skills);
 
     }
 
     @Override
     public SkillsDto findById(UUID idSki) {
         Skills skills = skillsDao.findById(idSki).orElse(null);
-        return skillsMapper.fromSkillsToSkillsDto(skills);
+        return skillsMapper.toDto(skills);
     }
 
     @Override
@@ -71,10 +71,10 @@ public class SkillsServiceImpl implements SkillsService {
     public SkillsDto update(SkillsDto skillsDto, UUID idSki) {
         Skills existingSkills = skillsDao.findById(idSki).orElse(null);
         if (existingSkills != null) {
-            skillsDto.setIdSki(idSki);
-            Skills updatedSkills = skillsMapper.fromSkillsDtoToSkills(skillsDto);
+            skillsDto.setId(idSki);
+            Skills updatedSkills = skillsMapper.toEntity(skillsDto);
             updatedSkills = skillsDao.save(updatedSkills);
-            return skillsMapper.fromSkillsToSkillsDto(updatedSkills);
+            return skillsMapper.toDto(updatedSkills);
         }
         return null;
     }
@@ -83,7 +83,7 @@ public class SkillsServiceImpl implements SkillsService {
     public Set<SkillsDto> findAll(Pageable pageable) {
 
         return skillsDao.findAll(PageRequest.of(0, 10)).stream()
-                .map(skillsMapper::fromSkillsToSkillsDto)
+                .map(skillsMapper::toDto)
                 .collect(Collectors.toSet());
     }
 
